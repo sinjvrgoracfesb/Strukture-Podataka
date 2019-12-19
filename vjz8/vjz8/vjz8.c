@@ -87,7 +87,7 @@ int main()
 
 	while(strcmp(upute, "exit")!=0)
 	{
-		for(i!=0)
+		if(i!=0)
 			PrintajPath(path);
 
 		fgets(komanda, 1024, stdin);
