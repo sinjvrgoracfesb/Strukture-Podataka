@@ -48,6 +48,7 @@ int main()
 	char *ImeDirektorija = NULL;
 	char *upute = NULL;
 	char *buff = NULL;
+	int i=0;
 	
 
 	Pozicija root=NULL;
@@ -81,14 +82,13 @@ int main()
 
 	stog->Next=NULL;
 
-	
-
 	strcat(path, root->ime);
 	strcat(path, ":\\");
 
 	while(strcmp(upute, "exit")!=0)
 	{
-		PrintajPath(path);
+		for(i!=0)
+			PrintajPath(path);
 
 		fgets(komanda, 1024, stdin);
 		
@@ -117,7 +117,7 @@ int main()
 		else if(strcmp(upute, "help")==0)
 			Help();
 			
-					
+		i++;			
 	}
 
 return 0;
